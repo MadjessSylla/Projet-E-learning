@@ -1,0 +1,86 @@
+<?php
+  include("head.php");
+  include("menu-admin.php");
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+ 
+
+
+	<div class="container"  style="margin-top:20px;width:30%;float:clear;">
+    <center class="titre" >Inscription Enseignant</center><br> 
+	<form action="enregistrer-enseignant.php" method="POST">
+	<label for="nom">Nom : </label>
+	<input type="text" name="nom" id="nom" placeholder="Entrez votre nom" class='form-control' required /><br/>
+	<label for="prenom">Prénom : </label>
+	<input type="text" style="margin-top:5px;" name="prenom" id="prenom" placeholder="Entrez votre Prénom" class='form-control' required /><br/>
+	<label for="sexe">Sexe: </label>
+	<select name="Sexe" id="Sexe" class='form-control'>
+		<option value="M">Masculin: </option>
+		<option value="F">Féminin: </option>
+	</select><br/>
+	<label for="age">Module : </label>
+	<input type="text" name="module" id="module" placeholder="Entrez le module" class='form-control' required /><br/>
+	<label for="mail">E-Mail : </label>
+	<input type="E-Mail" name="mail" id="mail" placeholder="Entrez votre adresse e-mail" class='form-control' required /><br/>
+    <label for="mail">Login : </label>
+	<input type="int" name="login" id="login" placeholder="votre login" required class='form-control' /> <br> 
+	<label for="mail">Mot de passe : </label>
+	<input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe"required class='form-control' />
+	<br>
+	<input type="submit" value="Envoyer" class="btn-primary" style="margin-left:50%;" />
+	<br/><br/>
+	
+	</form>	
+		
+	</div>
+	</body>
+<style >
+	body{
+			background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("pictures/msc.JPG");
+			height: 100vh;
+			width:100%;
+			-webkit-background-size:cover;
+			background-position: center center;
+			position: relative;
+
+		}
+		.container{
+			position: absolute;
+			top:70%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			box-sizing: border-box;
+			background-color: rgba(0,0,0,0.5);
+			padding: 10px;
+			margin: 20px;
+			border-radius: 15px;
+			border: 1px solid #fff;
+		}
+		.container:hover{
+		background: linear-gradient(45deg, #FC4668 ,#3F5EFB);
+
+		}
+		.titre{
+			margin: 0;
+			padding: 0 0 20px;
+			font-weight: bold;
+			color: white;
+			text-align: center;  
+		}
+
+</style>
+</html>
+
+
+	
+<?php
+
+
+?>
